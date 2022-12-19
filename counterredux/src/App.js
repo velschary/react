@@ -4,6 +4,7 @@ import CounterComp from './component/counterComp';
 import HookCounterComp from './component/hookCounterComp';
 import {Provider} from 'react-redux'
 import  {store} from './store/store'
+import Normalcounter from './component/normalcounter';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <div className="App">
       <CounterComp />
       <HookCounterComp/>
+      <Normalcounter val={10} />
+      <Normalcounter val={5}/>
     </div>
     </Provider>
   );
